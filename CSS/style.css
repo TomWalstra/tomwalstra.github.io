@@ -59,6 +59,8 @@ body {
     border: 1px solid var(--white);
 }
 
+.vid-mobile {display: none;}
+
 .socials-wrapper {
   display: flex;
   justify-content: center;
@@ -497,6 +499,8 @@ body {
 
 @media (max-width: 738px) {
   .container {padding: 0px 10px;}
+  .vid-mobile {display: block;}
+  .vid-desktop {display: none;}
   .details__wrapper {flex-direction: column;}
   .details__wrapper {padding: 30px;}
 .info__wrapper--intro {padding: 30px 15px 0 15px;}
@@ -507,4 +511,5 @@ body {
 .info__wrapper--section:nth-child(4) {padding: 0px 15px}
 .info__wrapper--section:nth-child(5) {padding: 0px 15px 30px;}
 .info__wrapper--section:nth-child(6) {padding: 0px 15px 30px;}
+
 }
