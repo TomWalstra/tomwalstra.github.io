@@ -137,13 +137,9 @@ body {
 .details__wrapper--item__details span.link {font-weight: bold;}
 
 .info__wrapper--section-item {transform: scale(1); opacity: 1;   transition: transform .5s ease-in-out;}
-@media (min-width: 768px) {
-  .info__wrapper--section-item-wrapper .info__wrapper--section-item:hover,
-  .info__wrapper--section-item-wrapper .info__wrapper--section-item:focus, {opacity: 1; transform: scale(1);}
-  .info__wrapper--section-item-wrapper:hover .info__wrapper--section-item:not(:hover),
-  .info__wrapper--section-item-wrapper:focus .info__wrapper--section-item:not(:focus) {opacity: .5; transform: scale(.95);}
 
-}
+  .info__wrapper--section-item-wrapper .info__wrapper--section-item:hover {opacity: 1; transform: scale(1);}
+  .info__wrapper--section-item-wrapper:hover .info__wrapper--section-item:not(:hover) {opacity: .5; transform: scale(.95);}
 
 
 .info__wrapper {    display: flex;flex-direction: column; row-gap: 30px; overflow: hidden;} 
