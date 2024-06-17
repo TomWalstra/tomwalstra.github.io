@@ -239,7 +239,7 @@ body {
     --transition-timing: 0.35s;
   }
   
-  .accordion .card:hover {
+  .accordion .card:hover,   .accordion .card:focus {
     flex-grow: 7;
   }
   
@@ -252,7 +252,7 @@ body {
     z-index: -1;
     transition: filter 0.35s ease, object-position 6s ease;
   }
-  .accordion .card:hover > .background {
+  .accordion .card:hover > .background,   .accordion .card:focus > .background {
     filter: brightness(1);     object-position: top;
   }
   
@@ -270,7 +270,7 @@ body {
   
   .accordion .card-content svg {height: 25px;}
   
-  .accordion .card:hover > .card-content {
+  .accordion .card:hover > .card-content,   .accordion .card:focus > .card-content {
     inset: 20px;
     top: auto;
   }
@@ -293,7 +293,7 @@ body {
   .accordion .profile-image > svg {
     stroke: #fefefe;
   }
-  .accordion .card:hover .profile-image > svg {
+  .accordion .card:hover .profile-image > svg,   .accordion .card:focus .profile-image > svg {
     stroke: rgb(110, 252, 205);
   }
   
@@ -304,7 +304,7 @@ body {
     opacity: 0;
     color: white;
   }
-  .accordion .card:hover .title {
+  .accordion .card:hover .title,  .accordion .card:focus .title {
     opacity: 1;
     translate: 0 0;
     color: rgb(110, 252, 205);
