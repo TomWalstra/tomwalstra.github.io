@@ -77,6 +77,8 @@ body {
     backdrop-filter: blur(5px);
 }
 
+
+
 .highlight {
     font-weight: bold;
     border-radius: 10px;
@@ -136,10 +138,10 @@ body {
 .details__wrapper--item__details {display: flex; flex-direction: column;}
 .details__wrapper--item__details span.link {font-weight: bold;}
 
-.info__wrapper--section-item {transform: scale(1); opacity: 1;   transition: transform .5s ease-in-out;}
+.info__wrapper--section-item {opacity: 1;   transition: opacity .5s ease-in-out;}
 
-  .info__wrapper--section-item-wrapper .info__wrapper--section-item:hover {opacity: 1; transform: scale(1);}
-  .info__wrapper--section-item-wrapper:hover .info__wrapper--section-item:not(:hover) {opacity: .5; transform: scale(.95);}
+  .info__wrapper--section-item-wrapper .info__wrapper--section-item:hover {opacity: 1; }
+  .info__wrapper--section-item-wrapper:hover .info__wrapper--section-item:not(:hover) {opacity: .5;}
 
 
 .info__wrapper {    display: flex;flex-direction: column; row-gap: 30px; overflow: hidden;} 
@@ -165,9 +167,9 @@ body {
 .testimonial-description {font-style: italic;}
 .testimonial-description strong {color: var(--highlight-color)}
 
-.splide__slide {transform: scale(1); opacity: 1;   transition: transform .5s ease-in-out;}
-.splide__list .splide__slide:hover {opacity: 1; transform: scale(1);}
-.splide__list:hover .splide__slide:not(:hover) {opacity: .5; transform: scale(.95);}
+.splide__slide {transform: scale(1); opacity: 1;   transition: opacity .5s ease-in-out;}
+.splide__list .splide__slide:hover {opacity: 1;}
+.splide__list:hover .splide__slide:not(:hover) {opacity: .5; }
 
 .experience-slider .splide__slide {display: flex; flex-direction: row; padding: 30px; row-gap: 15px; column-gap: 15px;     align-items: center; }
 .experience-logo img {height: 50px;}
@@ -361,7 +363,7 @@ body {
       outline: transparent;
       border: none;
       width: auto;
-      height: 1px;
+      height: 30px;
       position: relative;
       top: 3px;
       transition: background-color calc(var(--trans-dur) / 2) linear, color var(--trans-dur);
@@ -473,7 +475,10 @@ body {
           opacity: 1;
           color: white;
         }
-      .accordion .card:active, .card:focus  {height: 400px; transition: min-height 2s ease-in-out}
+      .accordion .card:active, .card:focus  {height: 400px; transition: min-height 2s ease-in-out; user-select: none;  /* Standard property */
+        -webkit-user-select: none;  /* Safari */
+        -moz-user-select: none;  /* Firefox */
+        -ms-user-select: none;  /* Internet Explorer/Edge */}
       .accordion .card:active .title,  .card:focus .title {
           opacity: 1;
           translate: 0 0;
