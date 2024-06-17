@@ -162,7 +162,7 @@ body {
 
 .testimonial-person {display: flex; align-items: center; column-gap: 15px;}
 
-.testimonial-person img { height: 70px;}
+.testimonial-person img { height: 70px; width: auto;}
 
 .testimonial-description {font-style: italic;}
 .testimonial-description strong {color: var(--highlight-color)}
@@ -177,6 +177,7 @@ body {
 
 .hover-container {position: relative;}
 
+.invisible {visibility: none;}
 
 .hover-reveal {
     position: absolute;
